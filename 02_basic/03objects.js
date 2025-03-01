@@ -1,38 +1,30 @@
-// singleton
-// Object.create
+//singleton
 
-// object literals
-
-const mySym = Symbol("key1")
-
+//object literals
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
-    age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
+    name: "Anurag",
+    age : 18,
+    location : "Lucknow",
     isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
+    lastLoginDays : ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+// console.log(JsUser.lastLoginDays)
+// console.log(JsUser.name)
+// console.log(JsUser["name"])
 
-JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
-// console.log(JsUser);
+// JsUser.name = "Anurag Ganvir"
 
+// console.log(JsUser["name"])
+ 
 JsUser.greeting = function(){
-    console.log("Hello JS user");
+    console.log("Hello JS User");
 }
-JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+
+JsUser.greetingOne = function(){
+    console.log(`Hello JS Users ${this.name}`);
 }
 
 console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greetingOne());
