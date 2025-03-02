@@ -1,1 +1,1 @@
-# JavaScript-Codes
+# JSC
