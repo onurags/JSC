@@ -62,9 +62,9 @@ function handleObject(object){
 
 // handleObject(user);
 // handleObject({
-    username:"jackkallis",
-    number: 555,
-})
+//     username:"jackkallis",
+//     number: 555,
+// })
 
  //handle array
 
